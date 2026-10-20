@@ -2,12 +2,13 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8" />
-    <title>Ryeonju | Backend Developer</title>
+    <title>김연주 | 비즈니스와 기술을 연결하는 백엔드 개발자</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="기획·영업·PM을 거쳐 백엔드 개발자로 돌아온 김연주입니다. Java·Spring Boot 백엔드 개발과 AI API 연동으로, 현업의 문제를 시스템으로 해결합니다." />
     <style>
         body {
             margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Malgun Gothic", sans-serif;
             background: #0f172a;
             color: #e5e7eb;
             line-height: 1.7;
@@ -21,12 +22,13 @@
             color: #f8fafc;
         }
         h1 {
-            font-size: 2.6rem;
-            margin-bottom: 10px;
+            font-size: 2.5rem;
+            line-height: 1.35;
+            margin-bottom: 14px;
         }
         h2 {
             font-size: 1.8rem;
-            margin-top: 60px;
+            margin-top: 64px;
             border-bottom: 1px solid #334155;
             padding-bottom: 10px;
         }
@@ -37,14 +39,86 @@
             color: #38bdf8;
             font-weight: 600;
         }
+        .name {
+            font-size: 1.05rem;
+            color: #94a3b8;
+            letter-spacing: 0.02em;
+            margin-bottom: 8px;
+        }
+        .badges {
+            margin-top: 26px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .badge {
+            border: 1px solid #334155;
+            background: #1e293b;
+            color: #e2e8f0;
+            border-radius: 999px;
+            padding: 4px 14px;
+            font-size: 0.92rem;
+        }
         .section {
             margin-top: 32px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-top: 24px;
+        }
+        .card {
+            border: 1px solid #334155;
+            background: #111c33;
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .card h3 {
+            margin: 0 0 8px 0;
+            font-size: 1.08rem;
+        }
+        .card p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+        .tag {
+            background: #1e293b;
+            border-radius: 8px;
+            padding: 5px 12px;
+            font-size: 0.92rem;
+            color: #e2e8f0;
+        }
+        .skill-group {
+            margin-top: 22px;
+        }
+        .skill-group h3 {
+            margin: 0 0 4px 0;
+            font-size: 1.05rem;
+            color: #e2e8f0;
+        }
+        .interest {
+            margin-top: 28px;
+            border: 1px solid #38bdf8;
+            border-radius: 12px;
+            padding: 20px 24px;
+            background: rgba(56, 189, 248, 0.07);
+        }
+        .interest p {
+            margin: 0;
+            color: #e2e8f0;
         }
         .timeline {
             margin-top: 20px;
         }
         .item {
-            margin-bottom: 24px;
+            margin-bottom: 26px;
         }
         .date {
             font-size: 0.9rem;
@@ -53,6 +127,10 @@
         .role {
             font-weight: 600;
             color: #e5e7eb;
+            font-size: 1.05rem;
+        }
+        .item p {
+            margin: 4px 0 0 0;
         }
         footer {
             margin-top: 80px;
@@ -61,34 +139,114 @@
             font-size: 0.9rem;
             color: #94a3b8;
         }
+        @media (max-width: 720px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 44px 20px;
+            }
+        }
     </style>
 </head>
 <body>
 <div class="container">
 
     <!-- HERO -->
-    <h1>안녕하세요,<br/> <span class="highlight">경험으로 설계하는 백엔드 개발자</span>입니다.</h1>
+    <div class="name">김연주 · Yeonju Kim</div>
+    <h1>안녕하세요,<br/> <span class="highlight">비즈니스와 기술을 연결하는<br/>백엔드 개발자</span>입니다.</h1>
     <p>
-        저는 단순히 코드를 작성하는 개발자가 아니라,<br/>
-        <span class="highlight">사람, 비즈니스, 기술</span>을 모두 경험하고 다시 개발자로 돌아온 사람입니다.
+        개발자로 커리어를 시작해 <span class="highlight">기획, 영업, PM</span>을 모두 경험하고 다시 개발자로 돌아왔습니다.<br/>
+        지금은 Java · Spring Boot 기반 백엔드 개발과 AI API 연동을 하며,<br/>
+        현업의 문제가 시스템으로 어떻게 풀리는지를 가장 가까이에서 다루고 있습니다.
     </p>
+    <div class="badges">
+        <span class="badge">Java · Spring Boot 백엔드</span>
+        <span class="badge">AI API 연동 개발</span>
+        <span class="badge">IT 기획 · 요구사항 구조화</span>
+        <span class="badge">현업 커뮤니케이션</span>
+    </div>
 
     <!-- ABOUT -->
     <h2>About Me</h2>
     <div class="section">
         <p>
-            개발자로 커리어를 시작했지만,  
-            저는 한 가지 역할에 머무르기보다 <strong>기획, 영업, PM</strong>까지 직접 경험하며  
-            “시스템이 실제로 어떻게 쓰이는지”를 몸으로 배웠습니다.
+            저는 한 가지 역할에 머무르기보다, 시스템이 실제로 쓰이는 현장 쪽에 계속 가까이 가려고 했습니다.
+            개발자로 시작했지만 기획, 영업, PM까지 직접 경험하며
+            “기술이 현업에서 어떻게 받아들여지고, 어디서 막히는지”를 몸으로 배웠습니다.
         </p>
         <p>
-            그리고 3년간 <span class="highlight">48개국 세계일주</span>를 하며  
-            낯선 환경에서 문제를 해결하고, 다양한 문화 속에서 소통하는 법을 익혔습니다.
+            그리고 3년간 <span class="highlight">48개국 세계일주</span>를 하며
+            낯선 환경에서 문제를 해결하고, 다양한 사람들과 소통하는 법을 익혔습니다.
         </p>
         <p>
-            이 모든 경험은 지금의 저를  
-            <strong>비즈니스를 이해하는 백엔드 개발자</strong>로 만들었습니다.
+            일할 때 동료들에게 가장 자주 듣는 말은 <span class="highlight">“꼼꼼하다”</span>는 평가입니다.
+            섬세하게 디테일을 챙기는 편이라, 요구사항의 작은 빈틈이나 놓치기 쉬운 부분을 먼저 확인하려고 합니다.
+            개발에서는 그 꼼꼼함이 안정성으로, 기획에서는 누락 없는 요구사항으로 이어진다고 생각합니다.
         </p>
+        <p>
+            그래서 제 강점은 하나의 기술을 오래 파는 깊이만이 아닙니다.
+            <strong>업무를 이해하는 눈, 요구를 구조화하는 힘, 직접 만들어낼 수 있는 개발 실무, 그리고 디테일을 놓치지 않는 꼼꼼함</strong> —
+            이 네 가지를 함께 가진 사람은 흔치 않다고 생각합니다.
+        </p>
+    </div>
+
+    <!-- WHAT I DO -->
+    <h2>What I Do</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>업무를 시스템으로 번역합니다</h3>
+            <p>현업의 요구를 듣고 요구사항으로 구조화하는 일. PM·기획·해외영업을 거치며, 현업의 언어와 개발의 언어를 오가는 법을 배웠습니다.</p>
+        </div>
+        <div class="card">
+            <h3>직접 만들 수 있습니다</h3>
+            <p>Java · Spring Boot 기반의 백엔드 개발을 실제 서비스 환경에서 하고 있습니다. 기획에서 끝나지 않고, 구현 가능성까지 판단할 수 있습니다.</p>
+        </div>
+        <div class="card">
+            <h3>AI를 업무에 붙입니다</h3>
+            <p>최근에는 AI API를 호출·연동하는 코드를 많이 작성하고 있습니다. 새 기술이 현업의 어떤 문제를 풀 수 있는지, 직접 만들며 확인합니다.</p>
+        </div>
+        <div class="card">
+            <h3>디테일을 놓치지 않습니다</h3>
+            <p>섬세하게 디테일을 챙기는 성격입니다. 작은 부분까지 확인하는 습관이 요구사항의 빈틈을 줄이고, 결과물의 완성도를 높입니다.</p>
+        </div>
+    </div>
+
+    <div class="interest">
+        <p>
+            <strong>관심 분야 — IT 기획 · AX · DX</strong><br/>
+            기술만 아는 사람도, 업무만 아는 사람도 아닌, 그 사이를 채우는 일에 관심이 있습니다.
+            업무 혁신과 AI 전환처럼 현업 이해와 기술 실행력이 함께 필요한 분야입니다.
+        </p>
+    </div>
+
+    <!-- SKILLS -->
+    <h2>Skills</h2>
+    <div class="section">
+        <div class="skill-group">
+            <h3>개발 — 실무에서 사용 중</h3>
+            <div class="tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">백엔드 개발</span>
+                <span class="tag">AI API 연동</span>
+                <span class="tag">실제 서비스 운영 환경 개발</span>
+            </div>
+        </div>
+        <div class="skill-group">
+            <h3>기획 · 협업</h3>
+            <div class="tags">
+                <span class="tag">IT 기획</span>
+                <span class="tag">요구사항 정의 · 구조화</span>
+                <span class="tag">PM</span>
+                <span class="tag">현업 · 개발자 커뮤니케이션</span>
+                <span class="tag">벤더 · 공급사 커뮤니케이션</span>
+                <span class="tag">꼼꼼함 · 디테일 관리</span>
+            </div>
+        </div>
     </div>
 
     <!-- CAREER -->
@@ -98,19 +256,19 @@
         <div class="item">
             <div class="date">2023.10 ~ 현재</div>
             <div class="role">(주)단비아이엔씨 · Backend Developer (Java)</div>
-            <p>실제 서비스 환경에서 안정성과 확장성을 고려한 백엔드 개발</p>
+            <p>Java · Spring Boot 기반 백엔드 개발. 실제 서비스 환경에서 안정성과 확장성을 고려해 개발하고, AI API를 연동하는 기능을 구현합니다.</p>
         </div>
 
         <div class="item">
             <div class="date">2021.12 ~ 2022.09</div>
             <div class="role">(주)오픈이지 · PM</div>
-            <p>개발자와 비즈니스 사이를 연결하며 요구사항을 구조화</p>
+            <p>개발자와 비즈니스 사이를 연결하며, 현업의 요구사항을 개발 가능한 형태로 구조화했습니다.</p>
         </div>
 
         <div class="item">
             <div class="date">2018.12 ~ 2020.10</div>
             <div class="role">(주)코만 · 해외영업</div>
-            <p>기술을 '설명해야 하는 사람'의 관점에서 시장을 경험</p>
+            <p>기술을 '설명해야 하는 사람'의 관점에서 시장과 고객을 경험했습니다. 고객이 기술을 어떻게 받아들이는지를 이해하게 된 시간입니다.</p>
         </div>
 
         <div class="item">
@@ -140,13 +298,13 @@
         <div class="item">
             <div class="date">2009.01 ~ 2012.04</div>
             <div class="role">LG CNS · Developer</div>
-            <p>대기업 SI 환경에서의 개발 프로세스 경험</p>
+            <p>대기업 SI 환경에서의 개발 프로세스와 협업 방식을 경험했습니다.</p>
         </div>
 
         <div class="item">
             <div class="date">2007.12 ~ 2008.12</div>
             <div class="role">LG화학 · 품질</div>
-            <p>품질과 안정성에 대한 기본적인 사고 체계 형성</p>
+            <p>품질과 안정성에 대한 기본적인 사고 체계를 형성했습니다.</p>
         </div>
 
     </div>
@@ -163,7 +321,7 @@
 
     <!-- FOOTER -->
     <footer>
-        © Ryeonju · Backend Developer<br/>
+        © Yeonju Kim · Backend Developer<br/>
         “다양한 경험은 복잡한 문제를 단순하게 만듭니다.”
     </footer>
 
